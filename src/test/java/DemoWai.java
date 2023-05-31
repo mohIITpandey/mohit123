@@ -8,11 +8,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class DemoWai {
+	
 public static void main(String[] args) {
 	Scanner sc=new Scanner(System.in);
 	System.out.println("Search phone:");
 	String searchPhone = sc.next();
-    String searchConnectivity = sc.next();
+	System.out.println("searchPhone");
+	String searchConnectivity = sc.next();
     
 	WebDriver driver= new ChromeDriver();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
